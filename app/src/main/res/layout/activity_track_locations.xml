@@ -1,0 +1,67 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light"
+    android:padding="16dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Track Locations"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <!-- Select User Type -->
+    <RadioGroup
+        android:id="@+id/rg_user_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student" />
+
+        <RadioButton
+            android:id="@+id/rb_staff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Staff" />
+    </RadioGroup>
+
+    <!-- Search Input -->
+    <EditText
+        android:id="@+id/et_search_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Enrollment No/Name (Student) or Name (Staff)"
+        android:layout_marginTop="12dp"
+        android:inputType="text" />
+
+    <!-- Track Button -->
+    <Button
+        android:id="@+id/btn_track"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Track"
+        android:textSize="20dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#4CDEED"
+        android:textColor="@android:color/black" />
+
+    <!-- Map View -->
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp" />
+</LinearLayout>

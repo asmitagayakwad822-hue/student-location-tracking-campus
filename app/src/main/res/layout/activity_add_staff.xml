@@ -1,0 +1,99 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_staff_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Staff Name"
+            android:inputType="textPersonName"
+            android:background="@drawable/shape"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/et_staff_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Staff ID"
+            android:inputType="text"
+            android:background="@drawable/shape"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/et_staff_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/shape"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/et_staff_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Mobile Number"
+            android:inputType="phone"
+            android:background="@drawable/shape"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:layout_marginBottom="12dp" />
+
+        <Spinner
+            android:id="@+id/spnDept"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:padding="15dp"
+            android:popupBackground="@android:color/white"
+            android:contentDescription="Select Department"
+            android:layout_marginBottom="30dp"
+            android:entries="@array/department_array"/>
+
+        <EditText
+            android:id="@+id/et_staff_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:background="@drawable/shape"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:padding="15dp"
+            android:layout_marginBottom="12dp" />
+
+
+        <Button
+            android:id="@+id/btn_submit_staff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Staff"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:backgroundTint="#4CDEED"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+</ScrollView>
+
+

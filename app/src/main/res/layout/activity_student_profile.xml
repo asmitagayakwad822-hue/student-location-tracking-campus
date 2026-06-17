@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ivProfileImage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_profile"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_shape" />
+
+        <TextView
+            android:id="@+id/tvStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvEnrollment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enrollment: 10111213"
+            android:textSize="19dp"
+            android:textColor="@color/black"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: student@gmail.com"
+            android:textSize="19dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile: 9876543210"
+            android:textSize="19dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Department: Computer Engineering"
+            android:textSize="19dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvClassYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class Year: TY"
+            android:textSize="19dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Active"
+            android:textSize="19dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#4CDEED" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentTracking"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LostFoundListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReportLostFoundActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnnouncementsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageAnnouncementsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.StudentProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewScheduleImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScheduleListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".staff.ShareScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrackingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ViewMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".staff.StaffProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".staff.ViewSchedulesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AddStaffActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.EditStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TrackLocationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ManageStaffActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ManageStudentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".student.StudentDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".staff.StaffDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StaffLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <service android:name=".utils.LocationService" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAotEHjeEf3Yks-KtXATNh73Ib68YiQOkM" />
+    </application>
+
+</manifest>

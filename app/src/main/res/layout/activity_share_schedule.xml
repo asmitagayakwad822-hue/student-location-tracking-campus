@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@color/white">
+
+        <!-- Department Spinner -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Department"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:popupBackground="@color/white"
+            android:padding="12dp" />
+
+        <!-- Class Year Spinner -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Class Year"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinnerClassYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:popupBackground="@color/white"
+            android:padding="12dp" />
+
+        <!-- Schedule Title -->
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Schedule Title"
+            android:background="@drawable/shape"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="12dp" />
+
+        <!-- Schedule Description -->
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Description"
+            android:background="@drawable/shape"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="12dp"
+            android:minHeight="100dp"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+
+        <!-- Image Selection Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnCaptureImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capture Image"
+                android:textSize="20dp"
+                android:backgroundTint="#4CDEED"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btnSelectImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Image"
+                android:textSize="20dp"
+                android:backgroundTint="#4CDEED"
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+
+        <!-- Image Preview -->
+        <ImageView
+            android:id="@+id/ivScheduleImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <!-- Upload Button -->
+        <Button
+            android:id="@+id/btnUploadSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Schedule"
+            android:textSize="20dp"
+            android:backgroundTint="#4CDEED"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

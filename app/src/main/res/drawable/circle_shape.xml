@@ -1,0 +1,12 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#4CDEED" />
+    <corners android:radius="50dp" />
+    <size
+        android:width="100dp"
+        android:height="100dp" />
+    <stroke
+        android:width="2dp"
+        android:color="@color/white" />
+</shape>
+
+    <!-- Circular shape with border for profile images or icons! 🚀 -->

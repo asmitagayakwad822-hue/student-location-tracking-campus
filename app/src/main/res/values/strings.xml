@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Student Tracking</string>
+    <string-array name="class_array">
+        <item>FY</item>
+        <item>SY</item>
+        <item>TY</item>
+    </string-array>
+    <string-array name="department_array">
+        <item>Information Technology</item>
+        <item>Electronics &amp; Telecommunication</item>
+        <item>Dress Designing and Manufacturing</item>
+        <item>Computer Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Electrical Engineering</item>
+    </string-array>
+    <string-array name="user_types">
+        <item>Student</item>
+        <item>Staff</item>
+    </string-array>
+    <string-array name="user_type_admin">
+        <item>Student</item>
+        <item>Staff</item>
+    </string-array>
+</resources>

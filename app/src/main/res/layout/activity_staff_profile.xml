@@ -1,0 +1,95 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="19dp"
+        android:background="@drawable/card_shape">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Staff Profile"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <ImageView
+            android:id="@+id/iv_staff_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_profile"
+            android:background="@drawable/circle_shape"
+            android:padding="10dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/tv_staff_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tv_staff_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Staff ID:"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tv_staff_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tv_staff_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile:"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tv_staff_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Department:"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="12dp" />
+
+
+
+        <Button
+            android:id="@+id/btn_edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:backgroundTint="#4CDEED"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+    <!-- Beautiful profile layout ready! Let me know if you want changes or enhancements 🚀 -->

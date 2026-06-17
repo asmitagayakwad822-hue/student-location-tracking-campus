@@ -1,0 +1,99 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light"
+    android:padding="16dp">
+
+    <!-- Notification Form -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Notification"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Notification Target -->
+    <RadioGroup
+        android:id="@+id/rg_target"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_students"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:text="Students" />
+
+        <RadioButton
+            android:id="@+id/rb_staff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:text="Staff" />
+    </RadioGroup>
+
+    <!-- Notification Content -->
+    <EditText
+        android:id="@+id/et_notification_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter notification message"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:minLines="3"
+        android:background="@drawable/shape"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:padding="4dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Send Button -->
+    <Button
+        android:id="@+id/btn_send_notification"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Notification"
+        android:backgroundTint="#4CDEED"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCC"
+        android:backgroundTint="@color/black"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Previous Notifications -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Previous Notifications"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+</LinearLayout>

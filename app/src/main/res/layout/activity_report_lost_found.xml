@@ -1,0 +1,63 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Enter Item Name"/>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Description"
+            android:background="@drawable/shape"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp"
+            android:minLines="3"
+            android:gravity="top"/>
+
+        <ImageView
+            android:id="@+id/ivItemImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"/>
+
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:layout_width="match_parent"
+            android:backgroundTint="#4CDEED"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Upload Image"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:backgroundTint="#4CDEED"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="Report Item"/>
+    </LinearLayout>
+</ScrollView>

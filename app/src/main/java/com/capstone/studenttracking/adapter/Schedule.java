@@ -1,0 +1,20 @@
+package com.capstone.studenttracking.adapter;
+
+public class Schedule {
+    private String id;
+    private String title;
+    private String description;
+    private String imageUrl;
+
+    public Schedule(String id, String title, String description, String imageUrl) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.imageUrl = imageUrl;
+    }
+
+    public String getId() { return id; }
+    public String getTitle() { return title; }
+    public String getDescription() { return description; }
+    public String getImageUrl() { return imageUrl; }
+}
